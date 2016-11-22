@@ -1,5 +1,9 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = onno 
+name = Onno van der Steen
 email = ovdsteen@gmail.com
+[core]
+	autocrlf = input
+[alias]
+	workprofile = config user.email \"vandersteen@comandi.nl\"
