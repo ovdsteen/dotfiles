@@ -6,4 +6,4 @@ email = ovdsteen@gmail.com
 [core]
 	autocrlf = input
 [alias]
-	workprofile = config user.email \"vandersteen@comandi.nl\"
+	workprofile = config user.email \"onno@codebridge.nl\"
