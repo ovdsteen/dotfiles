@@ -18,6 +18,7 @@ alias gf="git fetch --all"
 alias gc="git commit"
 alias gp="git add -p"
 alias gi="git add -i"
+alias showstash="git stash show -p stash@{1} >~/.diff && vim ~/.diff"
 
 #lazyhabits
 
