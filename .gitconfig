@@ -1,9 +1,10 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = Onno van der Steen
-email = ovdsteen@gmail.com
+	name = onno
+	email = ovdsteen@gmail.com
 [core]
 	autocrlf = input
-[alias]
-	workprofile = config user.email \"onno@codebridge.nl\"
+  excludesfile = /Users/onno/.dotfiles/.gitignore
+[push]
+  autoSetupRemote = true

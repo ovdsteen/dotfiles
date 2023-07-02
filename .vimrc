@@ -19,6 +19,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set cc=120
+set spell
 
 " nerdtree settings
 autocmd vimenter * if !argc() | NERDTree | endif
