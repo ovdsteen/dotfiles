@@ -8,7 +8,7 @@ alias ....="cd ../../.."
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 #laravel
-alias pa="php artisan"
+alias artisan="php artisan"
 alias composer="php /usr/local/bin/composer.phar"
 
 #git
@@ -19,6 +19,11 @@ alias gc="git commit"
 alias gp="git add -p"
 alias gi="git add -i"
 alias showstash="git stash show -p stash@{1} >~/.diff && vim ~/.diff"
+alias glist="git for-each-ref --count=20 --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias cleanbranches="git branch --merged | grep -v '\*\|master\|main\|develop' | xargs -n 1 git branch -d"
+
+#docker
+alias dms="docker-compose exec backend php artisan migrate:fresh --seed"
 
 #lazyhabits
 
@@ -30,3 +35,5 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Show/hide hidden files in Finder
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+alias air="~/.air"
